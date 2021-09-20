@@ -8,7 +8,7 @@ public class SelenideCheckIssueTest extends config.TestBase {
 
     String  url = "https://github.com",
             repository = "amd/scalapack",
-            issue_number = "4";
+            issueNumber = "4";
 
     CheckIssuePages act = new CheckIssuePages();
 
@@ -17,6 +17,6 @@ public class SelenideCheckIssueTest extends config.TestBase {
         act.openPage(url);
         act.findRepository(repository);
         act.openIssuesTab();
-        act.checkIssueNumber(issue_number);
+        act.checkIssueNumber(issueNumber);
     }
 }

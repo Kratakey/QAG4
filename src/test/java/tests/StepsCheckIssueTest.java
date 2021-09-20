@@ -10,7 +10,7 @@ public class StepsCheckIssueTest extends config.TestBase {
 
     String  url = "https://github.com",
             repository = "amd/scalapack",
-            issue_number = "4";
+            issueNumber = "4";
 
     CheckIssuePages act = new CheckIssuePages();
 
@@ -25,8 +25,8 @@ public class StepsCheckIssueTest extends config.TestBase {
         step("Open the Issue tab", (s) -> {
             act.openIssuesTab();
         });
-        step("Verify Issue number ("+issue_number+")", (s) -> {
-            act.checkIssueNumber(issue_number);
+        step("Verify Issue number ("+ issueNumber +")", (s) -> {
+            act.checkIssueNumber(issueNumber);
         });
     }
 

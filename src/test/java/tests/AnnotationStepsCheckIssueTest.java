@@ -3,16 +3,16 @@ package tests;
 import io.qameta.allure.*;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-import pages.CheckIssuePagesWithSteps;
+import pages.CheckIssueWithStepsPages;
 
 
 public class AnnotationStepsCheckIssueTest extends config.TestBase {
 
     String  url = "https://github.com",
             repository = "amd/scalapack",
-            issue_number = "4";
+            issueNumber = "4";
 
-    CheckIssuePagesWithSteps act = new CheckIssuePagesWithSteps();
+    CheckIssueWithStepsPages act = new CheckIssueWithStepsPages();
 
     @Test
     @Feature("Issues")
@@ -25,6 +25,6 @@ public class AnnotationStepsCheckIssueTest extends config.TestBase {
         act.openPage(url);
         act.findRepository(repository);
         act.openIssuesTab();
-        act.checkIssueNumber(issue_number);
+        act.checkIssueNumber(issueNumber);
     }
 }

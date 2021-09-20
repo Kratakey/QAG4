@@ -9,7 +9,7 @@ import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
 
 
-public class CheckIssuePagesWithSteps {
+public class CheckIssueWithStepsPages {
 
     @Step("Open the main page")
     public void openPage(String url) {
